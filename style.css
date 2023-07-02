@@ -1,0 +1,128 @@
+:root {
+  --clr-veryDarkMagenta: hsl(300, 43%, 22%);
+  --clr-softPink: hsl(333, 80%, 67%);
+  --clr-darkGrayishMagenta: hsl(303, 10%, 53%);
+  --clr-lightGrayishMagenta: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  font-size: 15px;
+  background: url(./images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+.topleft {
+  text-align: center;
+  padding: 0 30px;
+}
+.topleft h1 {
+  color: var(--clr-veryDarkMagenta);
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.topleft p {
+  color: var(--clr-darkGrayishMagenta);
+  font-weight: 500;
+}
+
+.topright {
+  padding: 0 30px;
+  font-weight: 700;
+  color: var(--clr-veryDarkMagenta);
+}
+.topright .rating {
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--clr-lightGrayishMagenta);
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
+.topright .rating .stars {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bottom {
+  padding: 0 30px;
+}
+.bottom .card {
+  color: var(--clr-white);
+  background-color: var(--clr-veryDarkMagenta);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+}
+.bottom .card .profile {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.bottom .card .profile img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+}
+.bottom .card .profile .profiledetails {
+  line-height: 0.7rem;
+}
+.bottom .card h4 {
+  color: var(--clr-softPink);
+}
+
+@media (min-width: 700px) {
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  main {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  .top .topleft {
+    text-align: left;
+    max-width: 30%;
+  }
+  .top .rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  .top .reviews {
+    margin: 0;
+    margin-right: 5rem;
+  }
+  .top .guru {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 3rem;
+  }
+  .top .tech {
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .bottom {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .bottom .card {
+    max-width: 300px;
+    padding: 1.5rem 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
